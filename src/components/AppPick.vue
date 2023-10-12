@@ -15,12 +15,12 @@
           class="rounded-lg border mt-3"
         >
           <template v-slot:title>
-            <v-card-title class="text-body-1 font-weight-bold" style="color: #02295a">{{
+            <v-card-title class="font-weight-medium" style="color: #04346f">{{
               item.title
             }}</v-card-title>
           </template>
           <template v-slot:subtitle> 
-            <v-card-subtitle class="text-caption text-md-body-2 ">
+            <v-card-subtitle class="text-caption  text-md-body-1 ">
               {{ item.subtitle }}
             </v-card-subtitle>
           </template>
@@ -96,6 +96,11 @@ export default {
   border: 1px solid #473dff !important;
 }
 
-
-
+.v-card-title{
+  line-height: 1.5rem;
+  font-size: 18px;
+}
+.v-card:hover {
+  border: 1px solid #473dff !important;
+}
 </style>

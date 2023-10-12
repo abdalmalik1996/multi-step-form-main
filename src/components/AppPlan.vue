@@ -14,7 +14,7 @@
               :class="isSelected ? 'bg-indigo-lighten-5 border_active' : ''"
               @click="select"
               variant="outlined"
-              class="px-md-4 py-md-5 px-4 py-2 rounded-lg border d-flex d-md-block"
+              class="px-md-4 py-md-5 px-4 py-2 rounded-lg border d-flex d-md-block card-hover"
               style="color: #05438e !important"
             >
               <img class="mb-md-6 me-6 me-md-0 d-inline" :src="item.img" alt="" />
@@ -37,7 +37,7 @@
       </v-row>
     </v-item-group>
 
-    <VCard variant="flat" color="#fafbff" class="d-flex c justify-center py-2 rounded-lg">
+    <v-card variant="flat" color="#fafbff" class="d-flex c justify-center py-2 rounded-lg">
       <div class="d-flex align-center">
         <VCardSubtitle
           :class="{ active_swich: duration === 'Monthly' }"
@@ -61,7 +61,8 @@
           >Yearly</VCardSubtitle
         >
       </div>
-    </VCard>
+    </v-card>
+
   </main>
 </template>
 <script>
@@ -108,6 +109,9 @@ export default {
 
 <style scoped>
 .border_active {
+  border: 1px solid #473dff !important;
+}
+.card-hover:hover{
   border: 1px solid #473dff !important;
 }
 </style>
