@@ -1,0 +1,17 @@
+
+@use "vuetify/settings" with (
+    $switch-inset-thumb-height: 14px,
+    $switch-inset-thumb-width: 14px,
+    $switch-inset-thumb-off-height: 14px,
+    $switch-inset-thumb-off-width: 14px,
+    $switch-inset-track-height: 24px,
+    $switch-inset-track-width: 38px,
+    $switch-thumb-background: white,
+    $switch-thumb-offset: -2px,
+    $switch-track-background: #022959,
+    $switch-track-opacity: 1,
+    $body-font-family: "Ubuntu",
+    $card-title-line-height : 2.5rem,
+    );
+
+
